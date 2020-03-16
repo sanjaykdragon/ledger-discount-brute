@@ -29,7 +29,7 @@ def test_code(code):
 		
 	discount_amount = r_json["items"][0]["discounts"][0]["label"]
 	print(f"code: {code} discount amt: {discount_amount}")
-	to_write.write(f"code: {code} discount amt: {discount_amount}")
+	to_write.write(f"code: {code} discount amt: {discount_amount}\n")
 
 f = open("words.txt", "r")
 word_list = [x.strip() for x in f.readlines()]
